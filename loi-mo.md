@@ -10,7 +10,7 @@
 | B6 | P2 | "Bé hôm nay" chưa có thẻ vàng "Đang chờ xác nhận" (dữ liệu test tên "Chờ") | FE | Đã đóng (tester xác minh 19:13) |
 | B7 | P2 | Cờ quan trọng + gửi từng phụ huynh | BE + FE | Đã đóng (tester xác minh 19:13) |
 | B8 | P2 | `/settings/school`, bỏ tên trường viết cứng | BE + FE | Đã đóng (tester xác minh 09/10, TT trường thật) |
-| B9 | P2 | Hẹn giờ + đính kèm ảnh thông báo | BE + FE | API đạt 18/18 (tester), UI đạt trừ B24 |
+| B9 | P2 | Hẹn giờ + đính kèm ảnh thông báo | BE + FE | Đã đóng (tester API 18/18 + designer UI 09/10) |
 | B10 | P3 | Nút "Ghi thu" lệch, ô Quá hạn 2 số | FE | Đã đóng (designer xác minh 390px 09/10) |
 | B11 | P3 | Nhật ký ngủ trưa tràn ở 390px | FE | Đã đóng (designer xác minh 390px 09/10) |
 | B12 | P2 | Nhập học lại cho bé đã nghỉ | BE + FE | Đã đóng (tester 09/10; HP cả tháng, tiền ăn theo ngày – chờ BGH xác nhận) |
@@ -42,10 +42,12 @@ Trạng thái 09/10: không còn P0/P1. Chờ tester chạy e2e trên bản buil
 | B22 | P3 | Bé học lại vẫn gợi ý hoàn tiền số dư | BE | Đã đóng (tester 09/10) |
 | — | P3 | /staff "1 lớp · 2 ngày", /finance items-start | FE | Đã đóng (designer 09/10) |
 | B23 | P2 | B9: ảnh đính kèm hiện sai thứ tự phía phụ huynh (nghi vấn) | BE + FE | Không phải lỗi (dev nhìn nhầm), đã thêm test f9ec1dc – đóng |
-| B24 | P3 | B9 UI: giờ 12h→24h, ô ngày đè icon 390px, thiếu nhãn "✓ Đã gửi" + số người xem | FE | Dev sửa trước 15:50 UTC |
+| B24 | P3 | B9 UI: giờ 12h→24h, ô ngày đè icon 390px, thiếu nhãn "✓ Đã gửi" + số người xem | FE | Đã đóng (designer xác minh 0ce058b) |
 
 ## Dữ liệu test cần xoá khi dọn DB
 - Khoản chi QA 11tr, "QA chờ duyệt" 10,5tr, "QA chi lớn"
-- Tin "QA hẹn giờ (sửa)", "Lễ hội Trung thu 2026" (gửi 2 lần)
+- Tin "QA hẹn giờ (sửa)" (2 bản), "Lễ hội Trung thu 2026" (gửi 2 lần)
 - Bé "QA Học Phí 47d8"
 - Chụp lại ảnh hướng dẫn sử dụng sau khi dọn
+
+Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Render kẹt captcha).
