@@ -86,7 +86,7 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 |---|---|---|---|---|
 | H1 | P1 | Bấm thông báo đơn nghỉ chỉ đánh dấu đã đọc → mở thẳng trang duyệt (Duyệt/Từ chối + phân trông thay); gộp vào G7 | FE + BE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
 | H2 | P2 | Nhật ký thao tác hiện chữ kỹ thuật (finance.expense.create, amount, out), tiền thiếu dấu chấm | FE | Đóng (tester 09/10) |
-| H3 | P2 | Nhiều trang hiện "0 trẻ"/"Lớp chưa có bé"/"0 tài khoản" khi đang tải → "Đang tải…" (gộp G2) | FE | Còn lỗi /attendance, /dashboard; gộp với G13/H7 nhánh design/h7-loading, chờ test |
+| H3 | P2 | Nhiều trang hiện "0 trẻ"/"Lớp chưa có bé"/"0 tài khoản" khi đang tải → "Đang tải…" (gộp G2) | FE | Tester đạt (design/h7-loading), đóng khi merge |
 | H4 | P1 | Đã đăng nhập, mở trang chủ vẫn ra trang đăng nhập → chuyển thẳng vào trang theo vai trò | FE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
 
 ## Góp ý PH lần 2 (10/10 VN)
@@ -113,23 +113,23 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 |---|---|---|---|---|
 | H5 | P1 | Đóng tab mở lại vẫn bị đòi đăng nhập (phải nhớ phiên) | FE + BE | Mở |
 | H6 | P1 | Chấm công tuần 12/10: không hiện cô Mai trông thay; "Cần trông thay"/"Nghỉ phép" = 0. Cần ghi "Trông thay Mầm 1" trên dòng cô Mai + cộng đúng ngày nghỉ | BE + FE | Mở |
-| H7 | P2 | Tổng quan hiện "Số lớp 0" trước khi tải xong → "Đang tải…" | FE | Mở |
+| H7 | P2 | Tổng quan hiện "Số lớp 0" trước khi tải xong → "Đang tải…" | FE | Tester đạt (design/h7-loading), đóng khi merge |
 
 ## Góp ý Cô giáo – thử lại (09/10)
 | ID | Mức | Mô tả | Người | Trạng thái |
 |---|---|---|---|---|
-| G11 | P1 | Nút Vào ca/Ra ca trang đầu chỉ hiện giờ, bấm không ăn | FE + BE | Mở |
-| G12 | P2 | Thống nhất chữ "Giao bé" (mục Thêm còn ghi "Đón bé") | FE | Mở |
-| G13 | P2 | Điểm danh hiện 0/danh sách trống khi tải → "Đang tải…" | FE | Mở |
+| G11 | P1 | Nút Vào ca/Ra ca trang đầu chỉ hiện giờ, bấm không ăn | FE + BE | Giao diện đạt; chờ BE chặn ra ca cùng phút |
+| G12 | P2 | Thống nhất chữ "Giao bé" (mục Thêm còn ghi "Đón bé") | FE | Còn lỗi: /pickups admin + thẻ nhân viên vẫn "Đón bé" → designer sửa |
+| G13 | P2 | Điểm danh hiện 0/danh sách trống khi tải → "Đang tải…" | FE | Tester đạt (design/h7-loading), đóng khi merge |
 | G14 | P1 | Điểm danh: bấm 1 lần đổi Có mặt/Vắng, lý do ghi sau (không bật hộp lý do) | FE | Mở |
 
 ## Góp ý Phụ huynh – thử lại (09/10)
 | ID | Mức | Mô tả | Người | Trạng thái |
 |---|---|---|---|---|
-| P8 | P1 | Học phí: ngoài "Đã đóng đủ" nhưng trong vẫn "Còn nợ 0đ · Quá hạn 0đ" → khi đủ thì ẩn dòng nợ, chỉ ghi "Đã đóng đủ" | FE | Mở |
-| P9 | P2 | Trang đầu hiện thẻ cô trông thay ("Thứ Hai cô Mai trông con") thay vì chỉ "Bạn có 3 thông báo" | FE + BE | Mở |
-| P10 | P2 | Hỏi đồng ý đăng hình: hiện ở trang đầu; chỉnh lại được trong Tài khoản (đang chỉ ở Hồ sơ bé) | FE | Mở |
-| P11 | P2 | Tài khoản: "Cài đặt thông báo" trông như nút mà bấm không ăn | FE | Mở |
-| P12 | P2 | Nhắn cô: cảnh báo "Đã quá 08:00…" chỉ hiện sau khi chọn ngày hôm nay | FE | Mở |
-| P13 | P1 | Ô điểm danh trang đầu lúc "Chưa điểm danh" lúc "Bé đã đến lớp" (không nhất quán) | FE + BE | Mở |
+| P8 | P1 | Học phí: ngoài "Đã đóng đủ" nhưng trong vẫn "Còn nợ 0đ · Quá hạn 0đ" → khi đủ thì ẩn dòng nợ, chỉ ghi "Đã đóng đủ" | FE | Tester đạt (design/ph-copy2), đóng khi merge |
+| P9 | P2 | Trang đầu hiện thẻ cô trông thay ("Thứ Hai cô Mai trông con") thay vì chỉ "Bạn có 3 thông báo" | FE + BE | Giao diện design/p9-sub; lỗi thẻ cũ khi xoá lượt trông thay → BE API đọc lượt trông thay, FE ẩn khi thiếu classId |
+| P10 | P2 | Hỏi đồng ý đăng hình: hiện ở trang đầu; chỉnh lại được trong Tài khoản (đang chỉ ở Hồ sơ bé) | FE | Tester đạt (design/ph-copy2), đóng khi merge |
+| P11 | P2 | Tài khoản: "Cài đặt thông báo" trông như nút mà bấm không ăn | FE | Chờ kiểm trên staging sau merge |
+| P12 | P2 | Nhắn cô: cảnh báo "Đã quá 08:00…" chỉ hiện sau khi chọn ngày hôm nay | FE | Tester đạt (design/ph-copy2), đóng khi merge |
+| P13 | P1 | Ô điểm danh trang đầu lúc "Chưa điểm danh" lúc "Bé đã đến lớp" (không nhất quán) | FE + BE | Giao diện đạt (ph-copy2); chờ BE kiểm trạng thái |
 | A3 | P3 | Lịch sử thay đổi: cột "Người sửa" hiện tên đăng nhập thay vì tên hiển thị | BE | Mở |
