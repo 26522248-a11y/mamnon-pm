@@ -19,12 +19,13 @@
 Sẵn sàng khi: không còn P0/P1 và tester chạy lại toàn bộ sau lần build gộp.
 
 ## Sau nghiệm thu 1.0 (19:25)
-| B13 | P1 | Nhập Excel: file lưu từ openpyxl/LibreOffice/Google Sheets bị 400 INVALID_FILE | BE | Đã đóng (tester 09/10, chạy lại trên master) |
-| B14 | P1 | Nhập Excel: dòng có nhiều lỗi chỉ báo lỗi đầu (bỏ qua kiểm tra lớp) | BE | Đã đóng (tester 09/10, chạy lại trên master) |
+| B13 | P1 | Nhập Excel: file lưu từ openpyxl/LibreOffice/Google Sheets bị 400 INVALID_FILE | BE | Đã đóng (tester xác minh trên master 09/10) |
+| B14 | P1 | Nhập Excel: dòng có nhiều lỗi chỉ báo lỗi đầu (bỏ qua kiểm tra lớp) | BE | Đã đóng (tester xác minh trên master 09/10) |
 | B15 | P3 | preview: dòng bỏ qua vẫn account "create" | BE | Đạt khi đọc code (tester 09/10) |
 | B16 | P3 | README thiếu 413; .env.example thiếu API_INTERNAL_URL | BE | Đã đóng (tester 09/10) |
 | B17 | P0 | Nhập Excel gắn nhầm phụ huynh khi SĐT trùng khác tên | BE + FE | Đã đóng (tester xác minh 19:37) |
-| B18 | P1 | Lịch sử thay đổi nhạy cảm (gỡ liên kết, SĐT, đồng ý ảnh) lưu DB + màn xem cho BGH, không chỉ file log | BE + FE | Code xong, chờ push lên master + tester xác minh |
-| B19 | P1 | API nhật ký ghi đè/xóa trường không gửi lên; cần PATCH từng phần | BE | Bản sửa có trên master (29c4365), chờ tester xác minh |
+| B18 | P1 | Lịch sử thay đổi nhạy cảm (gỡ liên kết, SĐT, đồng ý ảnh) lưu DB + màn xem cho BGH, không chỉ file log | BE + FE | Đã push; API đạt. Còn: SĐT trước/sau dồn sang "sau" (B20), test gỡ liên kết + 390px |
+| B19 | P1 | API nhật ký ghi đè/xóa trường không gửi lên; cần PATCH từng phần | BE | Đã đóng (tester xác minh trên master 09/10) |
 
 Lưu ý: nhánh chuẩn của backend là `master` (không phải `hotfix/import`).
+| B20 | P2 | Lịch sử đổi SĐT: giá trị trước trống, cả 2 số dồn vào "sau" | BE | Mở (designer 09/10) |
