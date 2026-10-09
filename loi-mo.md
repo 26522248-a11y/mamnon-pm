@@ -66,7 +66,7 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | U9 | P3 | Staging thiếu dữ liệu mẫu (ảnh, thực đơn, thông báo, học phí) | BE | Đã xong (dữ liệu mẫu staging; xoá bằng npm run demo:purge) |
 | U10 | P1 | Bấm "Đã giao bé" → tự báo PH: ai đón, mấy giờ, ảnh. Trước mắt: thông báo đẩy + trong app; sau: Zalo ZNS/SMS (cần Zalo OA + chi phí, chờ anh/chị duyệt) | BE + FE | API đạt staging; chờ designer xem thông báo; Zalo/SMS: anh/chị chốt KHÔNG làm, chỉ báo trong app |
 | B25 | P0 | Staging kẹt "Đang tải…": /health/ping 404 (Render chưa deploy 7757ea6), ServerWake thử lại mãi | BE + FE | Đã đóng (tester staging 09/10) |
-| U11 | P3 | Nút "Con nghỉ hôm nay" chưa nổi (cần nền peach, cao 56px) | FE | Đã push 4ffc7b2, chờ tester |
+| U11 | P3 | Nút "Con nghỉ hôm nay" chưa nổi (cần nền peach, cao 56px) | FE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
 
 ## Góp ý UX đợt 4 – Giáo viên (10/10 VN, staging)
 | ID | Mức | Mô tả | Người | Trạng thái |
@@ -74,19 +74,19 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | G1 | P2 | Điểm danh: lưu xong không có "Đã lưu" | FE | Đã đóng (merge e75c480) |
 | G2 | P2 | Nhật ký: đang tải hiện "Lớp chưa có bé" → "Đang tải…"; hiện họ tên + ảnh bé | FE | Đã đóng (merge e75c480) |
 | G3 | P3 | Nhật ký: giờ ngủ nhập phút; thêm mục uống nước | BE + FE | Đã đóng (merge e75c480) |
-| G4 | P1 | Giao bé: bỏ tick bắt buộc "đối chiếu ảnh và căn cước" → "Đúng người đón"; thống nhất chữ "Đón bé"/"Giao bé" | FE | Đã push 4ffc7b2, chờ tester |
-| G5 | P2 | Chấm công GV: đưa Vào ca/Ra ca ra trang đầu; đổi "Ca sáng" → "Ca ngày" | FE + BE | Đã merge 4ffc7b2, chờ tester |
-| G6 | P1 | Nghỉ phép: loại nghỉ (ốm, phép năm, việc riêng) + nửa ngày; "BGH" → "Ban giám hiệu" | BE + FE | Đã đóng (merge e75c480) |
-| G7 | P1 | Luồng nghỉ phép → trông thay: GV gửi đơn → báo BGH duyệt + nhắc phân trông thay; duyệt/từ chối → báo GV; GV ghi chú bàn giao lớp cho cô trông thay | BE + FE | Đã đóng (merge e75c480) |
-| G8 | P1 | Ngày có cô trông thay: báo PH lớp tên cô trông thay; dặn thuốc tự chuyển sang cô trông thay, "Đã cho uống" ghi giờ + báo PH | BE + FE | Đã đóng (merge e75c480) |
+| G4 | P1 | Giao bé: bỏ tick bắt buộc "đối chiếu ảnh và căn cước" → "Đúng người đón"; thống nhất chữ "Đón bé"/"Giao bé" | FE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
+| G5 | P2 | Chấm công GV: đưa Vào ca/Ra ca ra trang đầu; đổi "Ca sáng" → "Ca ngày" | FE + BE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
+| G6 | P1 | Nghỉ phép: loại nghỉ (ốm, phép năm, việc riêng) + nửa ngày; "BGH" → "Ban giám hiệu" | BE + FE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
+| G7 | P1 | Luồng nghỉ phép → trông thay: GV gửi đơn → báo BGH duyệt + nhắc phân trông thay; duyệt/từ chối → báo GV; GV ghi chú bàn giao lớp cho cô trông thay | BE + FE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
+| G8 | P1 | Ngày có cô trông thay: báo PH lớp tên cô trông thay; dặn thuốc tự chuyển sang cô trông thay, "Đã cho uống" ghi giờ + báo PH | BE + FE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
 
 ## Góp ý UX đợt 4 – Hiệu trưởng (10/10 VN)
 | ID | Mức | Mô tả | Người | Trạng thái |
 |---|---|---|---|---|
-| H1 | P1 | Bấm thông báo đơn nghỉ chỉ đánh dấu đã đọc → mở thẳng trang duyệt (Duyệt/Từ chối + phân trông thay); gộp vào G7 | FE + BE | Đã đóng (merge e75c480) |
+| H1 | P1 | Bấm thông báo đơn nghỉ chỉ đánh dấu đã đọc → mở thẳng trang duyệt (Duyệt/Từ chối + phân trông thay); gộp vào G7 | FE + BE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
 | H2 | P2 | Nhật ký thao tác hiện chữ kỹ thuật (finance.expense.create, amount, out), tiền thiếu dấu chấm | FE | Đã đóng (merge e75c480) |
 | H3 | P2 | Nhiều trang hiện "0 trẻ"/"Lớp chưa có bé"/"0 tài khoản" khi đang tải → "Đang tải…" (gộp G2) | FE | Đã đóng (merge e75c480) |
-| H4 | P1 | Đã đăng nhập, mở trang chủ vẫn ra trang đăng nhập → chuyển thẳng vào trang theo vai trò | FE | Đã push 4ffc7b2, chờ tester |
+| H4 | P1 | Đã đăng nhập, mở trang chủ vẫn ra trang đăng nhập → chuyển thẳng vào trang theo vai trò | FE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
 
 ## Góp ý PH lần 2 (10/10 VN)
 | ID | Mức | Mô tả | Người | Trạng thái |
@@ -104,3 +104,4 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 |---|---|---|---|---|
 | A1 | P1 | Lúc GV chọn ảnh: hiện danh sách + ảnh bé CHƯA đồng ý; ảnh gắn bé chưa đồng ý bị đánh dấu/làm mờ, chặn đăng nếu chưa xử lý | BE + FE + design | Đã đóng (merge e75c480) |
 | A2 | P1 | PH: câu rõ "Cho cô đăng hình con lên nhóm lớp: Có / Không"; hỏi ngay lần đầu mở app; đổi được ở Tài khoản (ghi lịch sử B18) | FE + BE | Đã đóng (merge e75c480) |
+| G9 | P2 | Ca trong DB vẫn tên "Ca sáng" (hiện trong tin trông thay, trang duyệt) → migration đổi "Ca ngày" | BE | Mở |
