@@ -10,7 +10,7 @@
 | B6 | P2 | "Bé hôm nay" chưa có thẻ vàng "Đang chờ xác nhận" (dữ liệu test tên "Chờ") | FE | Đã đóng (tester xác minh 19:13) |
 | B7 | P2 | Cờ quan trọng + gửi từng phụ huynh | BE + FE | Đã đóng (tester xác minh 19:13) |
 | B8 | P2 | `/settings/school`, bỏ tên trường viết cứng | BE + FE | Đã đóng (tester xác minh 09/10, TT trường thật) |
-| B9 | P2 | Hẹn giờ + đính kèm ảnh thông báo | BE + FE | Đang làm (mockups10), hạn 15:45 UTC |
+| B9 | P2 | Hẹn giờ + đính kèm ảnh thông báo | BE + FE | Code xong (BE 46bc523, web f678401), chờ tester + designer |
 | B10 | P3 | Nút "Ghi thu" lệch, ô Quá hạn 2 số | FE | Đã đóng (designer xác minh 390px 09/10) |
 | B11 | P3 | Nhật ký ngủ trưa tràn ở 390px | FE | Đã đóng (designer xác minh 390px 09/10) |
 | B12 | P2 | Nhập học lại cho bé đã nghỉ | BE + FE | Đã đóng (tester 09/10; HP cả tháng, tiền ăn theo ngày – chờ BGH xác nhận) |
@@ -41,3 +41,4 @@ Trạng thái 09/10: không còn P0/P1. Chờ tester chạy e2e trên bản buil
 | B9 hẹn giờ + ảnh thông báo | Chờ server |
 | B22 | P3 | Bé học lại vẫn gợi ý hoàn tiền số dư | BE | Đã đóng (tester 09/10) |
 | — | P3 | /staff "1 lớp · 2 ngày", /finance items-start | FE | Đã đóng (designer 09/10) |
+| B23 | P2 | B9: ảnh đính kèm hiện sai thứ tự phía phụ huynh (nghi vấn) | BE + FE | Dev đang xem, tester xác minh |
