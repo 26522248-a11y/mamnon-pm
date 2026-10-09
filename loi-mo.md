@@ -56,12 +56,12 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | ID | Mức | Mô tả | Người | Trạng thái |
 |---|---|---|---|---|
 | U1 | P1 | Mở app chậm ~20s (Render ngủ), trang trắng khi tải → cần skeleton/"Đang tải…" + giữ backend thức | BE + FE | BE 1476a10 ping; web "Đang tải…" đang làm |
-| U2 | P1 | Trang đầu: "Học phí còn nợ" mâu thuẫn "Đã đóng đủ" | FE + BE | Đã push ae70c4c, chờ tester staging |
-| U3 | P1 | Ô Thực đơn / Nhật ký / Học phí / "Chưa điểm danh" trông như nút nhưng bấm không được | FE | Đã push ae70c4c, chờ tester staging |
-| U4 | P1 | Báo nghỉ 1 chạm "Con nghỉ hôm nay" (lý do tuỳ chọn) | FE + BE | Đã push ae70c4c, chờ tester staging |
+| U2 | P1 | Trang đầu: "Học phí còn nợ" mâu thuẫn "Đã đóng đủ" | FE + BE | Đạt staging (đã đóng đủ); chờ test trường hợp còn nợ |
+| U3 | P1 | Ô Thực đơn / Nhật ký / Học phí / "Chưa điểm danh" trông như nút nhưng bấm không được | FE | Đã đóng (tester staging 10/10) |
+| U4 | P1 | Báo nghỉ 1 chạm "Con nghỉ hôm nay" (lý do tuỳ chọn) | FE + BE | Đã đóng (tester staging 10/10) |
 | U5 | P2 | Người đón hộ: PH chỉ nhập tên + SĐT; ảnh tuỳ chọn, GV chụp ở lần đón đầu; thẻ bé hiện ảnh + tên + nút gọi nhanh PH | BE + FE + design | Mở (HT, GV, PH đồng ý) |
-| U6 | P2 | Bỏ thuật ngữ: CCCD→"Số căn cước", BMI, HH:MM, album; "–kg"→"Chưa cân" | FE | Nhánh design/u6-u8, chờ merge |
+| U6 | P2 | Bỏ thuật ngữ: CCCD→"Số căn cước", BMI, HH:MM, album; "–kg"→"Chưa cân" | FE | Đã đóng (tester 390px), chờ merge |
 | U7 | P2 | PH chỉ 1 menu (thanh dưới ≤5 mục), bỏ menu bên | FE + design | Mở |
-| U8 | P2 | Chữ to hơn cho PH (≥17px), Đăng xuất tách xa tên; lời mời bật thông báo dễ hiểu | FE + design | Nhánh design/u6-u8, chờ merge |
+| U8 | P2 | Chữ to hơn cho PH (≥17px), Đăng xuất tách xa tên; lời mời bật thông báo dễ hiểu | FE + design | Đã đóng (tester 390px), chờ merge |
 | U9 | P3 | Staging thiếu dữ liệu mẫu (ảnh, thực đơn, thông báo, học phí) | BE | Đã xong (dữ liệu mẫu staging; xoá bằng npm run demo:purge) |
 | U10 | P1 | Bấm "Đã giao bé" → tự báo PH: ai đón, mấy giờ, ảnh. Trước mắt: thông báo đẩy + trong app; sau: Zalo ZNS/SMS (cần Zalo OA + chi phí, chờ anh/chị duyệt) | BE + FE | Mở |
