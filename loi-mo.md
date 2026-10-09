@@ -79,3 +79,11 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | G6 | P1 | Nghỉ phép: loại nghỉ (ốm, phép năm, việc riêng) + nửa ngày; "BGH" → "Ban giám hiệu" | BE + FE | Mở |
 | G7 | P1 | Luồng nghỉ phép → trông thay: GV gửi đơn → báo BGH duyệt + nhắc phân trông thay; duyệt/từ chối → báo GV; GV ghi chú bàn giao lớp cho cô trông thay | BE + FE | Mở |
 | G8 | P1 | Ngày có cô trông thay: báo PH lớp tên cô trông thay; dặn thuốc tự chuyển sang cô trông thay, "Đã cho uống" ghi giờ + báo PH | BE + FE | Mở |
+
+## Góp ý UX đợt 4 – Hiệu trưởng (10/10 VN)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| H1 | P1 | Bấm thông báo đơn nghỉ chỉ đánh dấu đã đọc → mở thẳng trang duyệt (Duyệt/Từ chối + phân trông thay); gộp vào G7 | FE + BE | Mở |
+| H2 | P2 | Nhật ký thao tác hiện chữ kỹ thuật (finance.expense.create, amount, out), tiền thiếu dấu chấm | FE | Mở |
+| H3 | P2 | Nhiều trang hiện "0 trẻ"/"Lớp chưa có bé"/"0 tài khoản" khi đang tải → "Đang tải…" (gộp G2) | FE | Mở |
+| H4 | P1 | Đã đăng nhập, mở trang chủ vẫn ra trang đăng nhập → chuyển thẳng vào trang theo vai trò | FE | Mở |
