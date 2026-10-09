@@ -222,3 +222,11 @@ Dọn dữ liệu test thêm: lượt giao bé Lê Hoàng Long 02:29 kèm ảnh;
 ## Cập nhật PM (10/10 VN, 02:56)
 - D3: Đã đóng (tester a11y đạt trên b0021dc).
 - B31: chuyển sang pusher (nối tiếp S3 vì cùng nâng sharp), hạn 04:30. fullstack dev chỉ đặt biến B2 + deploy. B30 làm sau B31.
+
+## Cập nhật PM (10/10 VN, 02:58)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| B29 | P3 | Tên file chứng từ tiếng Việt | BE | Merge f241e8e, staging 02:55; staging không có chứng từ cũ lỗi (7 dòng, receipt trống); chờ tester tải thử |
+| S3 | P2 | sharp 0.35.5, uuid 11.1.1, js-yaml 5.4.3; audit production 0 | BE | Merge eb5ca5f, staging 02:55; chờ tester upload ảnh |
+| B30 | P3 | Test demo-data lỗi thất thường | designer | Đang làm, hạn 03:45 |
+| B31 | P1 | Cache + thu nhỏ ảnh | pusher | Đang làm, hạn 04:30 |
