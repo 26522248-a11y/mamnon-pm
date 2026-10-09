@@ -29,6 +29,6 @@ Sẵn sàng khi: không còn P0/P1 và tester chạy lại toàn bộ sau lần 
 
 Lưu ý: nhánh chuẩn của backend là `master` (không phải `hotfix/import`).
 | B20 | P2 | Lịch sử đổi SĐT: giá trị trước trống, cả 2 số dồn vào "sau" | BE | Đã đóng (tester xác minh 09/10) |
-| B21 | P3 | Lịch sử SĐT: nhãn "đã đổi" (sky-500) vì che số làm 2 số khác nhau trông giống nhau; chữ tab /fees gãy dòng 390px | BE + FE | PM chốt, dev làm trước 16:00 UTC |
+| B21 | P3 | Lịch sử SĐT: nhãn "đã đổi" (sky-500) vì che số làm 2 số khác nhau trông giống nhau; chữ tab /fees gãy dòng 390px | BE + FE | Đã đóng (tester API + designer 390px 09/10) |
 
 Trạng thái 09/10: không còn P0/P1. Chờ tester chạy e2e trên bản build cuối.
