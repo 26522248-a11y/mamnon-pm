@@ -51,3 +51,16 @@ Trạng thái 09/10: không còn P0/P1. Chờ tester chạy e2e trên bản buil
 - Chụp lại ảnh hướng dẫn sử dụng sau khi dọn
 
 Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Render kẹt captcha).
+
+## Góp ý UX đợt 4 – Phụ huynh (09/10, staging)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| U1 | P1 | Mở app chậm ~20s (Render ngủ), trang trắng khi tải → cần skeleton/"Đang tải…" + giữ backend thức | BE + FE | Mở |
+| U2 | P1 | Trang đầu: "Học phí còn nợ" mâu thuẫn "Đã đóng đủ" | FE + BE | Mở |
+| U3 | P1 | Ô Thực đơn / Nhật ký / Học phí / "Chưa điểm danh" trông như nút nhưng bấm không được | FE | Mở |
+| U4 | P1 | Báo nghỉ 1 chạm "Con nghỉ hôm nay" (lý do tuỳ chọn) | FE + BE | Mở |
+| U5 | P2 | Người đón hộ: chỉ bắt buộc tên + quan hệ + 1 SĐT; ảnh/CCCD tuỳ chọn, trường duyệt khi giao | BE + FE + design | Mở |
+| U6 | P2 | Bỏ thuật ngữ: CCCD→"Số căn cước", BMI, HH:MM, album; "–kg"→"Chưa cân" | FE | Mở |
+| U7 | P2 | PH chỉ 1 menu (thanh dưới ≤5 mục), bỏ menu bên | FE + design | Mở |
+| U8 | P2 | Chữ to hơn cho PH (≥17px), Đăng xuất tách xa tên; lời mời bật thông báo dễ hiểu | FE + design | Mở |
+| U9 | P3 | Staging thiếu dữ liệu mẫu (ảnh, thực đơn, thông báo, học phí) | BE | Dev đang nạp |
