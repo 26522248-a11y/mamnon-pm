@@ -114,3 +114,11 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | H5 | P1 | Đóng tab mở lại vẫn bị đòi đăng nhập (phải nhớ phiên) | FE + BE | Mở |
 | H6 | P1 | Chấm công tuần 12/10: không hiện cô Mai trông thay; "Cần trông thay"/"Nghỉ phép" = 0. Cần ghi "Trông thay Mầm 1" trên dòng cô Mai + cộng đúng ngày nghỉ | BE + FE | Mở |
 | H7 | P2 | Tổng quan hiện "Số lớp 0" trước khi tải xong → "Đang tải…" | FE | Mở |
+
+## Góp ý Cô giáo – thử lại (09/10)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| G11 | P1 | Nút Vào ca/Ra ca trang đầu chỉ hiện giờ, bấm không ăn | FE + BE | Mở |
+| G12 | P2 | Thống nhất chữ "Giao bé" (mục Thêm còn ghi "Đón bé") | FE | Mở |
+| G13 | P2 | Điểm danh hiện 0/danh sách trống khi tải → "Đang tải…" | FE | Mở |
+| G14 | P1 | Điểm danh: bấm 1 lần đổi Có mặt/Vắng, lý do ghi sau (không bật hộp lý do) | FE | Mở |
