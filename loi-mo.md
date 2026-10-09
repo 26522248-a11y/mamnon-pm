@@ -9,9 +9,9 @@
 | B5 | P2 | Tổng quan BGH thiếu điểm danh theo lớp + "Cần chú ý" | BE + FE | Đã đóng (tester xác minh 19:13) |
 | B6 | P2 | "Bé hôm nay" chưa có thẻ vàng "Đang chờ xác nhận" (dữ liệu test tên "Chờ") | FE | Đã đóng (tester xác minh 19:13) |
 | B7 | P2 | Cờ quan trọng + gửi từng phụ huynh | BE + FE | Đã đóng (tester xác minh 19:13) |
-| B8 | P2 | `/settings/school`, bỏ tên trường viết cứng | BE + FE | Đạt API (tester 09/10); chờ điền TT trường thật vào env |
+| B8 | P2 | `/settings/school`, bỏ tên trường viết cứng | BE + FE | Đã đóng (tester xác minh 09/10, TT trường thật) |
 | B9 | P2 | Hẹn giờ + đính kèm ảnh thông báo | BE + FE | Sau khi lên server |
-| B10 | P3 | Nút "Ghi thu" lệch, ô Quá hạn 2 số | FE | Đang sửa: "còn …" gãy dòng; nút Ghi thu ở /fees khuất ở 390px |
+| B10 | P3 | Nút "Ghi thu" lệch, ô Quá hạn 2 số | FE | Đã đóng (designer xác minh 390px 09/10) |
 | B11 | P3 | Nhật ký ngủ trưa tràn ở 390px | FE | Đã đóng (designer xác minh 390px 09/10) |
 | B12 | P2 | Nhập học lại cho bé đã nghỉ | BE + FE | Sau tuần 3 |
 
@@ -24,8 +24,11 @@ Sẵn sàng khi: không còn P0/P1 và tester chạy lại toàn bộ sau lần 
 | B15 | P3 | preview: dòng bỏ qua vẫn account "create" | BE | Đạt khi đọc code (tester 09/10) |
 | B16 | P3 | README thiếu 413; .env.example thiếu API_INTERNAL_URL | BE | Đã đóng (tester 09/10) |
 | B17 | P0 | Nhập Excel gắn nhầm phụ huynh khi SĐT trùng khác tên | BE + FE | Đã đóng (tester xác minh 19:37) |
-| B18 | P1 | Lịch sử thay đổi nhạy cảm (gỡ liên kết, SĐT, đồng ý ảnh) lưu DB + màn xem cho BGH, không chỉ file log | BE + FE | Đã push; API đạt. Còn: SĐT trước/sau dồn sang "sau" (B20), test gỡ liên kết + 390px |
+| B18 | P1 | Lịch sử thay đổi nhạy cảm (gỡ liên kết, SĐT, đồng ý ảnh) lưu DB + màn xem cho BGH, không chỉ file log | BE + FE | Đã đóng (tester + designer xác minh 09/10, đủ 3 loại) |
 | B19 | P1 | API nhật ký ghi đè/xóa trường không gửi lên; cần PATCH từng phần | BE | Đã đóng (tester xác minh trên master 09/10) |
 
 Lưu ý: nhánh chuẩn của backend là `master` (không phải `hotfix/import`).
-| B20 | P2 | Lịch sử đổi SĐT: giá trị trước trống, cả 2 số dồn vào "sau" | BE | Mở (designer 09/10) |
+| B20 | P2 | Lịch sử đổi SĐT: giá trị trước trống, cả 2 số dồn vào "sau" | BE | Đã đóng (tester xác minh 09/10) |
+| B21 | P3 | Lịch sử SĐT: nhãn "đã đổi" (sky-500) vì che số làm 2 số khác nhau trông giống nhau; chữ tab /fees gãy dòng 390px | BE + FE | PM chốt, dev làm trước 16:00 UTC |
+
+Trạng thái 09/10: không còn P0/P1. Chờ tester chạy e2e trên bản build cuối.
