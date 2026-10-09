@@ -111,7 +111,7 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 ## Góp ý Hiệu trưởng – thử lại luồng nghỉ phép (09/10)
 | ID | Mức | Mô tả | Người | Trạng thái |
 |---|---|---|---|---|
-| H5 | P1 | Đóng tab mở lại vẫn bị đòi đăng nhập (phải nhớ phiên) | FE + BE | Mở |
+| H5 | P1 | Đóng tab mở lại vẫn bị đòi đăng nhập (phải nhớ phiên) | FE + BE | Dev đang làm |
 | H6 | P1 | Chấm công tuần 12/10: không hiện cô Mai trông thay; "Cần trông thay"/"Nghỉ phép" = 0. Cần ghi "Trông thay Mầm 1" trên dòng cô Mai + cộng đúng ngày nghỉ | BE + FE | Đã push (web 834eec2 / BE 23b8863), chờ tester trên staging |
 | H7 | P2 | Tổng quan hiện "Số lớp 0" trước khi tải xong → "Đang tải…" | FE | Đóng (merge main web 834eec2) |
 
@@ -121,13 +121,13 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | G11 | P1 | Nút Vào ca/Ra ca trang đầu chỉ hiện giờ, bấm không ăn | FE + BE | Đã push (web 834eec2 / BE 23b8863), chờ tester trên staging |
 | G12 | P2 | Thống nhất chữ "Giao bé" (mục Thêm còn ghi "Đón bé") | FE | Đóng (merge main web 834eec2) |
 | G13 | P2 | Điểm danh hiện 0/danh sách trống khi tải → "Đang tải…" | FE | Đóng (merge main web 834eec2) |
-| G14 | P1 | Điểm danh: bấm 1 lần đổi Có mặt/Vắng, lý do ghi sau (không bật hộp lý do) | FE | Mở |
+| G14 | P1 | Điểm danh: bấm 1 lần đổi Có mặt/Vắng, lý do ghi sau (không bật hộp lý do) | FE | Đã push web 0a25df9, chờ tester chạy lại e2e_g14 (Đi muộn/Vắng có phép → Có mặt) |
 
 ## Góp ý Phụ huynh – thử lại (09/10)
 | ID | Mức | Mô tả | Người | Trạng thái |
 |---|---|---|---|---|
 | P8 | P1 | Học phí: ngoài "Đã đóng đủ" nhưng trong vẫn "Còn nợ 0đ · Quá hạn 0đ" → khi đủ thì ẩn dòng nợ, chỉ ghi "Đã đóng đủ" | FE | Đóng (merge main web 834eec2) |
-| P9 | P2 | Trang đầu hiện thẻ cô trông thay ("Thứ Hai cô Mai trông con") thay vì chỉ "Bạn có 3 thông báo" | FE + BE | API BE 23b8863 xong; designer đổi thẻ sang API, chờ test |
+| P9 | P2 | Trang đầu hiện thẻ cô trông thay ("Thứ Hai cô Mai trông con") thay vì chỉ "Bạn có 3 thông báo" | FE + BE | Đóng (tester 18/18, merge web 0a25df9) |
 | P10 | P2 | Hỏi đồng ý đăng hình: hiện ở trang đầu; chỉnh lại được trong Tài khoản (đang chỉ ở Hồ sơ bé) | FE | Đóng (merge main web 834eec2) |
 | P11 | P2 | Tài khoản: "Cài đặt thông báo" trông như nút mà bấm không ăn | FE | Đã push (web 834eec2 / BE 23b8863), chờ tester trên staging |
 | P12 | P2 | Nhắn cô: cảnh báo "Đã quá 08:00…" chỉ hiện sau khi chọn ngày hôm nay | FE | Đóng (merge main web 834eec2) |
