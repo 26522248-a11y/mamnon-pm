@@ -137,3 +137,23 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | G15 | P3 | /home lúc tải hiện "✓ Vào ca" khoá dù đã ra ca → "Đang tải…" | FE (designer) | Mở |
 | H9 | P3 | API /staff/attendance trả pending thay vì sub cho ngày trông thay; Ra ca đồng thời trả alreadyCheckedOut sai | BE | Mở |
 | P14 | P3 | Thông báo PH "có mặt dù đã báo vắng" ghi ngày 2026-10-10 → "Thứ Bảy 10/10" | BE | Mở |
+
+## Cập nhật PM (10/10 VN, 02:25)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| H5 | P1 | Nhớ phiên khi đóng mở tab | FE + BE | Lên staging (web 2a14e60), chờ tester xác minh |
+| P13 | P1 | Ô điểm danh trang đầu theo giờ VN, hết nhảy trạng thái | FE | Lên staging (web 2a14e60), chờ tester xác minh |
+| H8 | P3 | audit-api.ts:35 "Đón bé" → "Giao bé" | FE (pusher) | Lên staging (web 2a14e60) |
+| G15 | P3 | /home nút ca hiện "Đang tải…" | FE (designer) | Lên staging (web 2a14e60) |
+| H9 | P3 | /staff/attendance trả substitute + planned cho ngày trông thay | BE | Lên staging (backend 19e0dd8), chờ tester xác minh |
+| P14 | P3 | Mọi thông báo hiện ngày dạng "Thứ Tư 14/10" | BE (pusher) | Lên staging (backend 19e0dd8, gồm 66b12c5), chờ tester xác minh |
+| U11, G4, G5, G6, G7, H1, H4 | — | Chạy lại trên staging | — | Đã đóng (tester staging 10/10 02:19) |
+| G8 | P1 | Dặn thuốc chuyển cô trông thay + "Đã cho uống" | BE + FE | Phần báo PH đạt; phần dặn thuốc test sáng thứ Hai 12/10 (cần TK cô Mai) |
+| B26 | P2 | Test U5 lỗi do nhiều người chung DB mamnon_test | BE | Không phải lỗi code; dùng TEST_DATABASE_URL riêng (README backend PR #2) |
+| S1 | P1 | Next 14.2.35 lỗ hổng critical → Next 15.5.27 | FE | web PR #4 chờ duyệt; sau đó tester thử đăng nhập, điều hướng, ảnh giao bé, ảnh lớp, in phiếu thu |
+| S2 | P2 | @nestjs/core, body-parser, file-type (Nest 11.2.7, Express 5) | BE (pusher) | Xong nhánh pusher/s2 32c78ed; cần Render Node ≥20; tester kiểm tra API sau deploy |
+| S3 | P2 | sharp, uuid, js-yaml còn cảnh báo audit | BE (pusher) | Làm sau khi S2 merge |
+| U5, U10 | P2 | Duyệt thẻ giao bé + thông báo "Đã giao bé" | designer | Đang làm, hạn 03:02 |
+
+Đã đóng: test HEIC và demo-data P3 (qua khi có mamnon-qa cạnh backend).
+Dọn dữ liệu test thêm: người đón hộ "QA G4 8ff1" của bé An.
