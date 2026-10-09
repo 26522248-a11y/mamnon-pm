@@ -286,3 +286,5 @@ Còn trước phát hành:
 
 Lịch thứ Hai 12/10: 07:30 pusher điểm danh → tester G8 (đăng nhập cô Mai) → test máy thật (mamnon-qa/checklist-thu-push-dien-thoai.md) → fullstack dev chạy thử dọn dữ liệu, anh/chị duyệt → dọn thật → designer chụp lại ảnh hướng dẫn.
 Việc anh/chị: hỏi trường về lưu ảnh trẻ ở máy chủ ngoài VN (B2 EU) trước khi dùng thật.
+
+- B33: Đã đóng (backend 29b12d3, 03:32). Không còn việc mở đêm 10/10.
