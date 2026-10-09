@@ -11,8 +11,8 @@
 | B7 | P2 | Cờ quan trọng + gửi từng phụ huynh | BE + FE | Đã đóng (tester xác minh 19:13) |
 | B8 | P2 | `/settings/school`, bỏ tên trường viết cứng | BE + FE | Đạt API (tester 09/10); chờ điền TT trường thật vào env |
 | B9 | P2 | Hẹn giờ + đính kèm ảnh thông báo | BE + FE | Sau khi lên server |
-| B10 | P3 | Nút "Ghi thu" lệch, ô Quá hạn 2 số | FE | Đang sửa |
-| B11 | P3 | Nhật ký ngủ trưa tràn ở 390px | FE | Đang sửa |
+| B10 | P3 | Nút "Ghi thu" lệch, ô Quá hạn 2 số | FE | Đang sửa: "còn …" gãy dòng; nút Ghi thu ở /fees khuất ở 390px |
+| B11 | P3 | Nhật ký ngủ trưa tràn ở 390px | FE | Đã đóng (designer xác minh 390px 09/10) |
 | B12 | P2 | Nhập học lại cho bé đã nghỉ | BE + FE | Sau tuần 3 |
 
 Đã đóng: lỗi ảnh P0 (3), lỗi số dư khi chốt nghỉ P0.
