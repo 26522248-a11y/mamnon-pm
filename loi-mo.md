@@ -67,3 +67,13 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | U10 | P1 | Bấm "Đã giao bé" → tự báo PH: ai đón, mấy giờ, ảnh. Trước mắt: thông báo đẩy + trong app; sau: Zalo ZNS/SMS (cần Zalo OA + chi phí, chờ anh/chị duyệt) | BE + FE | API đạt staging; chờ designer xem thông báo; Zalo/SMS chờ anh/chị duyệt |
 | B25 | P0 | Staging kẹt "Đang tải…": /health/ping 404 (Render chưa deploy 7757ea6), ServerWake thử lại mãi | BE + FE | Đã đóng (tester staging 09/10) |
 | U11 | P3 | Nút "Con nghỉ hôm nay" chưa nổi (cần nền peach, cao 56px) | FE | Dev sửa trước 17:20 UTC |
+
+## Góp ý UX đợt 4 – Giáo viên (10/10 VN, staging)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| G1 | P2 | Điểm danh: lưu xong không có "Đã lưu" | FE | Mở |
+| G2 | P2 | Nhật ký: đang tải hiện "Lớp chưa có bé" → "Đang tải…"; hiện họ tên + ảnh bé | FE | Mở |
+| G3 | P3 | Nhật ký: giờ ngủ nhập phút; thêm mục uống nước | BE + FE | Mở |
+| G4 | P1 | Giao bé: bỏ tick bắt buộc "đối chiếu ảnh và căn cước" → "Đúng người đón"; thống nhất chữ "Đón bé"/"Giao bé" | FE | Mở |
+| G5 | P2 | Chấm công GV: đưa Vào ca/Ra ca ra trang đầu; đổi "Ca sáng" → "Ca ngày" | FE + BE | Mở |
+| G6 | P3 | Nghỉ phép: loại nghỉ (ốm, phép năm, việc riêng) + nửa ngày; "BGH" → "Ban giám hiệu" | BE + FE | Mở |
