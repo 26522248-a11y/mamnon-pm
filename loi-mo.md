@@ -261,3 +261,16 @@ Checklist trước phát hành (sáng thứ Hai 12/10, máy thật): chụp ản
 - B30: Đã đóng (backend a57cf25, chỉ sửa test).
 - B31 (backend 26f3b84), B32 (web 7a55b7d): lên staging 03:12, chờ tester.
 - B27: Render STORAGE_DRIVER=s3 → B2 mamnon-uploads-nhuy-1010; tester upload → dev deploy lại → kiểm tra ảnh còn. render.yaml đổi s3: PR riêng chờ duyệt. Repair chưa chạy.
+
+## Cập nhật PM (10/10 VN, 03:17)
+- B27: Đã đóng (tester 15/15 sau deploy lại 03:15, ảnh lưu B2 còn nguyên, 401 khi chưa đăng nhập).
+- B31: Đã đóng (ảnh 7,6 MB → 1280×960 293 KB; ETag/304; chứng từ no-store).
+- B32: Đã đóng (upload 7,6 MB qua web 201).
+
+Trạng thái 03:17: không còn P0/P1 mở trên staging.
+Còn trước phát hành:
+1. Script repair:missing-photos: dev backup bảng qua Neon HTTPS + chạy thử → anh/chị duyệt --apply.
+2. PR đổi render.yaml sang s3: chờ duyệt.
+3. Sáng thứ Hai 12/10: test máy thật (checklist-thu-push-dien-thoai.md) + G8 dặn thuốc.
+4. Trường xác nhận việc lưu ảnh trẻ ở máy chủ ngoài VN (B2 EU).
+5. Dọn dữ liệu test (danh sách ở trên) + chụp lại ảnh hướng dẫn.
