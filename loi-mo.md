@@ -202,3 +202,12 @@ Dọn dữ liệu test thêm: lượt giao bé Lê Hoàng Long 02:29 kèm ảnh;
 | B29 | P3 | Tên file chứng từ tiếng Việt | BE (pusher) | Xong pusher/b29 a552638, chờ PR; chứng từ cũ: đếm trước, nếu chỉ dữ liệu test thì dọn |
 | B30 | P3 | Test demo-data lỗi thất thường (sót dữ liệu giữa các lần chạy) | BE (pusher) | Mở, sau S3 |
 | S3 | P2 | sharp, uuid, js-yaml | BE (pusher) | Đang làm |
+
+## Cập nhật PM (10/10 VN, 02:52)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| S2 | P2 | Nest 11 / Express 5 | BE | Đã đóng (tester staging 24/24 + 16/16) |
+| D1, D2, B28 | P3 | | FE | Đã đóng (tester staging 02:50, 63 trang không 401) |
+| D3 | P3 | Dòng đã đón bấm được | FE | Đóng chức năng (web 2621c57); a11y aria-label sửa trên design/d3-a11y 28fc333, chờ gộp + tester |
+| B27 | P0 | Lưu ảnh bền vững | BE (pusher) | So sánh dịch vụ S3 free không thẻ, báo 03:20. Chặn phát hành duy nhất |
+| B29, S3 | P3/P2 | | BE (pusher) | PR trước 03:30 |
