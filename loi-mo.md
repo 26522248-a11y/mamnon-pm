@@ -104,5 +104,5 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 |---|---|---|---|---|
 | A1 | P1 | Lúc GV chọn ảnh: hiện danh sách + ảnh bé CHƯA đồng ý; ảnh gắn bé chưa đồng ý bị đánh dấu/làm mờ, chặn đăng nếu chưa xử lý | BE + FE + design | Đã đóng (merge e75c480) |
 | A2 | P1 | PH: câu rõ "Cho cô đăng hình con lên nhóm lớp: Có / Không"; hỏi ngay lần đầu mở app; đổi được ở Tài khoản (ghi lịch sử B18) | FE + BE | Đã đóng (merge e75c480) |
-| G9 | P2 | Ca trong DB vẫn tên "Ca sáng" (hiện trong tin trông thay, trang duyệt) → migration đổi "Ca ngày" | BE | Đã lên staging d9b9c02, chờ tester |
-| G10 | P2 | Khung lỗi hiện tiếng Anh ("Failed to fetch", "Internal server error") → câu tiếng Việt, vd "Chưa lưu được, kiểm tra mạng rồi bấm Lưu lại" (msgErrorText, toàn app) | FE | Nhánh design/g10-errors 6284d6e, chờ tester |
+| G9 | P2 | Ca trong DB vẫn tên "Ca sáng" (hiện trong tin trông thay, trang duyệt) → migration đổi "Ca ngày" | BE | Đạt local; chờ kiểm staging |
+| G10 | P2 | Khung lỗi hiện tiếng Anh ("Failed to fetch", "Internal server error") → câu tiếng Việt, vd "Chưa lưu được, kiểm tra mạng rồi bấm Lưu lại" (msgErrorText, toàn app) | FE | Đạt (tester 17/17), chờ dev merge |
