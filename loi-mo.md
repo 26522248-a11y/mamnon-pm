@@ -236,3 +236,13 @@ Dọn dữ liệu test thêm: lượt giao bé Lê Hoàng Long 02:29 kèm ảnh;
 - B29: Đã đóng (tester: "hóa đơn điện.pdf" tải về đúng tên, nội dung khớp).
 - B30: Nguyên nhân LIMIT 1 không sắp xếp chọn trúng bé đã trả đủ; sửa test, backend PR #8, 10/10 qua; chờ anh/chị duyệt.
 - B27: anh/chị đang đăng ký Backblaze B2 cùng pusher.
+
+## Cập nhật PM (10/10 VN, 03:03)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| B31 | P1 | Thu nhỏ + cache ảnh | BE (pusher) | backend PR #9; bổ sung sharp.concurrency(1) + hàng đợi, cache RAM 24 MB, giới hạn upload 10 MB (dự phòng); rồi chờ duyệt |
+| B32 | P1 | Web thu nhỏ ảnh trên máy trước khi gửi (~1600px JPEG), tránh giới hạn ~4,5 MB Vercel; PDF giữ nguyên | FE (designer) | Mở, hạn 04:00 |
+| B30 | P3 | | | backend PR #8 chờ duyệt |
+
+Ghi chú quyền riêng tư cho trường: ảnh đã cache trên máy phụ huynh vẫn còn sau khi trường xoá ảnh.
+Kiểm thử sau deploy: upload ảnh 6–8 MB qua mamnon-web.vercel.app (không gọi thẳng API).
