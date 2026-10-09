@@ -211,3 +211,10 @@ Dọn dữ liệu test thêm: lượt giao bé Lê Hoàng Long 02:29 kèm ảnh;
 | D3 | P3 | Dòng đã đón bấm được | FE | Đóng chức năng (web 2621c57); a11y aria-label sửa trên design/d3-a11y 28fc333, chờ gộp + tester |
 | B27 | P0 | Lưu ảnh bền vững | BE (pusher) | So sánh dịch vụ S3 free không thẻ, báo 03:20. Chặn phát hành duy nhất |
 | B29, S3 | P3/P2 | | BE (pusher) | PR trước 03:30 |
+
+## Cập nhật PM (10/10 VN, 02:55)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| B27 | P0 | Lưu ảnh bền vững | BE | Đề xuất Backblaze B2 (free 10 GB, không thẻ, region EU Amsterdam); chờ anh/chị đăng ký + nhập key cho fullstack dev. Lưu ý pháp lý: ảnh trẻ em lưu ngoài VN, cần trường xác nhận trước khi dùng thật |
+| B31 | P1 | Ảnh: header private, max-age thay no-store + sharp thu nhỏ ảnh đón/avatar để không chạm giới hạn B2 (2.500 đọc, 1 GB/ngày) | BE (fullstack dev) | Mở, làm ngay sau B2; chặn phát hành |
+| D3 a11y | P3 | Trình đọc màn hình đọc đủ tên + giờ đón | FE | web PR #7 b0021dc đang deploy, chờ tester |
