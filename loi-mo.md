@@ -173,3 +173,15 @@ Dọn dữ liệu test thêm: người đón hộ "QA G4 8ff1" của bé An.
 | S2 | P2 | Nâng Nest 11 / Express 5 | BE (pusher) | backend PR #4 mở, chờ xác nhận Render Node ≥20 + duyệt |
 
 Dọn dữ liệu test thêm: lượt giao bé An hôm nay cho "QA G4 8ff1".
+
+## Cập nhật PM (10/10 VN, 02:37)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| S1 | P1 | Next 15.5.27 | FE | Đã đóng (web 5b744be, tester hồi quy 4 vai trò, 56 trang, 390px + 1280px) |
+| B26 | P2 | Test U5 chung DB | BE | Đã đóng (README backend d35527d) |
+| B27 | P0 | Ảnh mất mỗi lần deploy (Render free, ổ tạm, STORAGE_DRIVER=local) | BE (pusher) | Team chọn R2; pusher code trên pusher/b27-r2, hạn 04:30; chờ anh/chị tạo Cloudflare R2 + nhập key cho pusher |
+| B28 | P3 | /pickups: softGet gọi /pickup-duties/me trước khi có token → 401 | FE (designer) | Sửa trên design/softget-401 (95cb993), chờ gộp |
+| D1, D2 | P3 | Ẩn khung ảnh trống; ẩn nút sau khi bé được đón | FE (designer) | Sửa trên design/d1-d2 (40dbef7), chờ gộp |
+| S2 | P2 | Nest 11 / Express 5 | BE (pusher) | backend PR #4 (0598d54), Render NODE_VERSION=20, chờ anh/chị duyệt |
+
+Dọn dữ liệu test thêm: lượt giao bé Lê Hoàng Long 02:29 kèm ảnh; bài ảnh lớp "QA S1 – ảnh test, sẽ xoá".
