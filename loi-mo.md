@@ -48,6 +48,7 @@ Trạng thái 09/10: không còn P0/P1. Chờ tester chạy e2e trên bản buil
 - Khoản chi QA 11tr, "QA chờ duyệt" 10,5tr, "QA chi lớn"
 - Tin "QA hẹn giờ (sửa)" (2 bản), "Lễ hội Trung thu 2026" (gửi 2 lần)
 - Bé "QA Học Phí 47d8"
+- Staging: đơn nghỉ "QA-TEST-FAKE" của Cô Lan 10/10
 - Chụp lại ảnh hướng dẫn sử dụng sau khi dọn
 
 Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Render kẹt captcha).
@@ -104,5 +105,5 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 |---|---|---|---|---|
 | A1 | P1 | Lúc GV chọn ảnh: hiện danh sách + ảnh bé CHƯA đồng ý; ảnh gắn bé chưa đồng ý bị đánh dấu/làm mờ, chặn đăng nếu chưa xử lý | BE + FE + design | Đã đóng (merge e75c480) |
 | A2 | P1 | PH: câu rõ "Cho cô đăng hình con lên nhóm lớp: Có / Không"; hỏi ngay lần đầu mở app; đổi được ở Tài khoản (ghi lịch sử B18) | FE + BE | Đã đóng (merge e75c480) |
-| G9 | P2 | Ca trong DB vẫn tên "Ca sáng" (hiện trong tin trông thay, trang duyệt) → migration đổi "Ca ngày" | BE | Đạt local; chờ kiểm staging |
-| G10 | P2 | Khung lỗi hiện tiếng Anh ("Failed to fetch", "Internal server error") → câu tiếng Việt, vd "Chưa lưu được, kiểm tra mạng rồi bấm Lưu lại" (msgErrorText, toàn app) | FE | Đạt (tester 17/17), chờ dev merge |
+| G9 | P2 | Ca trong DB vẫn tên "Ca sáng" (hiện trong tin trông thay, trang duyệt) → migration đổi "Ca ngày" | BE | Đã đóng (tester staging) |
+| G10 | P2 | Khung lỗi hiện tiếng Anh ("Failed to fetch", "Internal server error") → câu tiếng Việt, vd "Chưa lưu được, kiểm tra mạng rồi bấm Lưu lại" (msgErrorText, toàn app) | FE | Đã đóng (merge 6284d6e) |
