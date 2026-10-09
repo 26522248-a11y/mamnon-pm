@@ -230,3 +230,9 @@ Dọn dữ liệu test thêm: lượt giao bé Lê Hoàng Long 02:29 kèm ảnh;
 | S3 | P2 | sharp 0.35.5, uuid 11.1.1, js-yaml 5.4.3; audit production 0 | BE | Merge eb5ca5f, staging 02:55; chờ tester upload ảnh |
 | B30 | P3 | Test demo-data lỗi thất thường | designer | Đang làm, hạn 03:45 |
 | B31 | P1 | Cache + thu nhỏ ảnh | pusher | Đang làm, hạn 04:30 |
+
+## Cập nhật PM (10/10 VN, 03:00)
+- S3: Đã đóng (tester 20/20, JPG 4000×3000 + HEIC thật, file giả bị chặn 400).
+- B29: Đã đóng (tester: "hóa đơn điện.pdf" tải về đúng tên, nội dung khớp).
+- B30: Nguyên nhân LIMIT 1 không sắp xếp chọn trúng bé đã trả đủ; sửa test, backend PR #8, 10/10 qua; chờ anh/chị duyệt.
+- B27: anh/chị đang đăng ký Backblaze B2 cùng pusher.
