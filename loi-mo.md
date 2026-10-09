@@ -10,10 +10,10 @@
 | B6 | P2 | "Bé hôm nay" chưa có thẻ vàng "Đang chờ xác nhận" (dữ liệu test tên "Chờ") | FE | Đã đóng (tester xác minh 19:13) |
 | B7 | P2 | Cờ quan trọng + gửi từng phụ huynh | BE + FE | Đã đóng (tester xác minh 19:13) |
 | B8 | P2 | `/settings/school`, bỏ tên trường viết cứng | BE + FE | Đã đóng (tester xác minh 09/10, TT trường thật) |
-| B9 | P2 | Hẹn giờ + đính kèm ảnh thông báo | BE + FE | Sau khi lên server |
+| B9 | P2 | Hẹn giờ + đính kèm ảnh thông báo | BE + FE | Đang làm (mockups10), hạn 15:45 UTC |
 | B10 | P3 | Nút "Ghi thu" lệch, ô Quá hạn 2 số | FE | Đã đóng (designer xác minh 390px 09/10) |
 | B11 | P3 | Nhật ký ngủ trưa tràn ở 390px | FE | Đã đóng (designer xác minh 390px 09/10) |
-| B12 | P2 | Nhập học lại cho bé đã nghỉ | BE + FE | Code xong (8b0ed1e), chờ tester |
+| B12 | P2 | Nhập học lại cho bé đã nghỉ | BE + FE | Đã đóng (tester 09/10; HP cả tháng, tiền ăn theo ngày – chờ BGH xác nhận) |
 
 Đã đóng: lỗi ảnh P0 (3), lỗi số dư khi chốt nghỉ P0.
 Sẵn sàng khi: không còn P0/P1 và tester chạy lại toàn bộ sau lần build gộp.
@@ -39,3 +39,5 @@ Trạng thái 09/10: không còn P0/P1. Chờ tester chạy e2e trên bản buil
 | Quản lý GV /staff (chấm công, ca, trông thay, nghỉ phép) | Code xong (BE 350bd9d, web cf9e612), chờ tester + designer |
 | Thu chi /finance (chi >10tr BGH duyệt) | Code xong, chờ tester + designer |
 | B9 hẹn giờ + ảnh thông báo | Chờ server |
+| B22 | P3 | Bé học lại vẫn gợi ý hoàn tiền số dư | BE | Đã đóng (tester 09/10) |
+| — | P3 | /staff "1 lớp · 2 ngày", /finance items-start | FE | Đã đóng (designer 09/10) |
