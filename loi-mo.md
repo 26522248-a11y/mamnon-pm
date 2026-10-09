@@ -122,3 +122,13 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | G12 | P2 | Thống nhất chữ "Giao bé" (mục Thêm còn ghi "Đón bé") | FE | Mở |
 | G13 | P2 | Điểm danh hiện 0/danh sách trống khi tải → "Đang tải…" | FE | Mở |
 | G14 | P1 | Điểm danh: bấm 1 lần đổi Có mặt/Vắng, lý do ghi sau (không bật hộp lý do) | FE | Mở |
+
+## Góp ý Phụ huynh – thử lại (09/10)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| P8 | P1 | Học phí: ngoài "Đã đóng đủ" nhưng trong vẫn "Còn nợ 0đ · Quá hạn 0đ" → khi đủ thì ẩn dòng nợ, chỉ ghi "Đã đóng đủ" | FE | Mở |
+| P9 | P2 | Trang đầu hiện thẻ cô trông thay ("Thứ Hai cô Mai trông con") thay vì chỉ "Bạn có 3 thông báo" | FE + BE | Mở |
+| P10 | P2 | Hỏi đồng ý đăng hình: hiện ở trang đầu; chỉnh lại được trong Tài khoản (đang chỉ ở Hồ sơ bé) | FE | Mở |
+| P11 | P2 | Tài khoản: "Cài đặt thông báo" trông như nút mà bấm không ăn | FE | Mở |
+| P12 | P2 | Nhắn cô: cảnh báo "Đã quá 08:00…" chỉ hiện sau khi chọn ngày hôm nay | FE | Mở |
+| P13 | P1 | Ô điểm danh trang đầu lúc "Chưa điểm danh" lúc "Bé đã đến lớp" (không nhất quán) | FE + BE | Mở |
