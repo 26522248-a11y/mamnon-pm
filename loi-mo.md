@@ -133,3 +133,4 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | P12 | P2 | Nhắn cô: cảnh báo "Đã quá 08:00…" chỉ hiện sau khi chọn ngày hôm nay | FE | Tester đạt (design/ph-copy2), đóng khi merge |
 | P13 | P1 | Ô điểm danh trang đầu lúc "Chưa điểm danh" lúc "Bé đã đến lớp" (không nhất quán) | FE + BE | Giao diện đạt (ph-copy2); chờ BE kiểm trạng thái |
 | A3 | P3 | Lịch sử thay đổi: cột "Người sửa" hiện tên đăng nhập thay vì tên hiển thị | BE | Mở |
+| H8 | P3 | Nhật ký thao tác BGH còn nhãn "Đón bé" (audit-api.ts:35) → "Giao bé" | FE | Mở |
