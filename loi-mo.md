@@ -246,3 +246,13 @@ Dọn dữ liệu test thêm: lượt giao bé Lê Hoàng Long 02:29 kèm ảnh;
 
 Ghi chú quyền riêng tư cho trường: ảnh đã cache trên máy phụ huynh vẫn còn sau khi trường xoá ảnh.
 Kiểm thử sau deploy: upload ảnh 6–8 MB qua mamnon-web.vercel.app (không gọi thẳng API).
+
+## Cập nhật PM (10/10 VN, 03:08)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| B27 | P0 | Lưu ảnh bền vững | BE | Bucket B2 mamnon-uploads-nhuy-1010 (private, eu-central-003) đã tạo; chờ anh/chị nhập key cho fullstack dev; dev đặt biến + merge PR #9 + deploy một lượt, tự thử deploy lại, rồi tester |
+| B31 | P1 | Thu nhỏ + cache + hàng đợi ảnh | BE (pusher) | backend PR #9 (8ce4845), 223/224 test; chờ duyệt |
+| B32 | P2 | Thu nhỏ ảnh trên máy | FE (designer) | web PR #8 (gồm câu lỗi 503 f30b59c); chờ duyệt. Hạ từ P1 vì proxy Vercel không chặn 8 MB (tester) |
+| B30 | P3 | | | backend PR #8 chờ duyệt |
+
+Checklist trước phát hành (sáng thứ Hai 12/10, máy thật): chụp ảnh + HEIC trên iPhone; G8 phần dặn thuốc.
