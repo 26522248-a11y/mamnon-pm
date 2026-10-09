@@ -41,4 +41,4 @@ Trạng thái 09/10: không còn P0/P1. Chờ tester chạy e2e trên bản buil
 | B9 hẹn giờ + ảnh thông báo | Chờ server |
 | B22 | P3 | Bé học lại vẫn gợi ý hoàn tiền số dư | BE | Đã đóng (tester 09/10) |
 | — | P3 | /staff "1 lớp · 2 ngày", /finance items-start | FE | Đã đóng (designer 09/10) |
-| B23 | P2 | B9: ảnh đính kèm hiện sai thứ tự phía phụ huynh (nghi vấn) | BE + FE | Dev đang xem, tester xác minh |
+| B23 | P2 | B9: ảnh đính kèm hiện sai thứ tự phía phụ huynh (nghi vấn) | BE + FE | Không phải lỗi (dev nhìn nhầm), đã thêm test f9ec1dc – đóng |
