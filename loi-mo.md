@@ -64,7 +64,7 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | U7 | P2 | PH chỉ 1 menu (thanh dưới ≤5 mục), bỏ menu bên | FE + design | Đã đóng (designer staging 390px) |
 | U8 | P2 | Chữ to hơn cho PH (≥17px), Đăng xuất tách xa tên; lời mời bật thông báo dễ hiểu | FE + design | Đã đóng (staging) |
 | U9 | P3 | Staging thiếu dữ liệu mẫu (ảnh, thực đơn, thông báo, học phí) | BE | Đã xong (dữ liệu mẫu staging; xoá bằng npm run demo:purge) |
-| U10 | P1 | Bấm "Đã giao bé" → tự báo PH: ai đón, mấy giờ, ảnh. Trước mắt: thông báo đẩy + trong app; sau: Zalo ZNS/SMS (cần Zalo OA + chi phí, chờ anh/chị duyệt) | BE + FE | API đạt staging; chờ designer xem thông báo; Zalo/SMS chờ anh/chị duyệt |
+| U10 | P1 | Bấm "Đã giao bé" → tự báo PH: ai đón, mấy giờ, ảnh. Trước mắt: thông báo đẩy + trong app; sau: Zalo ZNS/SMS (cần Zalo OA + chi phí, chờ anh/chị duyệt) | BE + FE | API đạt staging; chờ designer xem thông báo; Zalo/SMS: anh/chị chốt KHÔNG làm, chỉ báo trong app |
 | B25 | P0 | Staging kẹt "Đang tải…": /health/ping 404 (Render chưa deploy 7757ea6), ServerWake thử lại mãi | BE + FE | Đã đóng (tester staging 09/10) |
 | U11 | P3 | Nút "Con nghỉ hôm nay" chưa nổi (cần nền peach, cao 56px) | FE | Dev sửa trước 17:20 UTC |
 
