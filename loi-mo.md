@@ -256,3 +256,8 @@ Kiểm thử sau deploy: upload ảnh 6–8 MB qua mamnon-web.vercel.app (không
 | B30 | P3 | | | backend PR #8 chờ duyệt |
 
 Checklist trước phát hành (sáng thứ Hai 12/10, máy thật): chụp ảnh + HEIC trên iPhone; G8 phần dặn thuốc.
+
+## Cập nhật PM (10/10 VN, 03:13)
+- B30: Đã đóng (backend a57cf25, chỉ sửa test).
+- B31 (backend 26f3b84), B32 (web 7a55b7d): lên staging 03:12, chờ tester.
+- B27: Render STORAGE_DRIVER=s3 → B2 mamnon-uploads-nhuy-1010; tester upload → dev deploy lại → kiểm tra ảnh còn. render.yaml đổi s3: PR riêng chờ duyệt. Repair chưa chạy.
