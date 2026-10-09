@@ -25,4 +25,4 @@ Sẵn sàng khi: không còn P0/P1 và tester chạy lại toàn bộ sau lần 
 | B16 | P3 | README thiếu 413; .env.example thiếu API_INTERNAL_URL | BE | Mở |
 | B17 | P0 | Nhập Excel gắn nhầm phụ huynh khi SĐT trùng khác tên | BE + FE | Đã đóng (tester xác minh 19:37) |
 | B18 | P1 | Lịch sử thay đổi nhạy cảm (gỡ liên kết, SĐT, đồng ý ảnh) lưu DB + màn xem cho BGH, không chỉ file log | BE + FE | Đang làm |
-| B19 | P1 | API nhật ký ghi đè/xóa trường không gửi lên; cần PATCH từng phần | BE | BE sửa 19:43, chờ tester xác minh |
+| B19 | P1 | API nhật ký ghi đè/xóa trường không gửi lên; cần PATCH từng phần | BE | Mở lại (tester 09/10: PATCH vẫn xóa trường không gửi), dev sửa trước 16:00 UTC |
