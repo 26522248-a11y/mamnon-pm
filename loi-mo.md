@@ -13,7 +13,7 @@
 | B9 | P2 | Hẹn giờ + đính kèm ảnh thông báo | BE + FE | Sau khi lên server |
 | B10 | P3 | Nút "Ghi thu" lệch, ô Quá hạn 2 số | FE | Đã đóng (designer xác minh 390px 09/10) |
 | B11 | P3 | Nhật ký ngủ trưa tràn ở 390px | FE | Đã đóng (designer xác minh 390px 09/10) |
-| B12 | P2 | Nhập học lại cho bé đã nghỉ | BE + FE | Sau tuần 3 |
+| B12 | P2 | Nhập học lại cho bé đã nghỉ | BE + FE | Code xong (8b0ed1e), chờ tester |
 
 Đã đóng: lỗi ảnh P0 (3), lỗi số dư khi chốt nghỉ P0.
 Sẵn sàng khi: không còn P0/P1 và tester chạy lại toàn bộ sau lần build gộp.
@@ -32,3 +32,10 @@ Lưu ý: nhánh chuẩn của backend là `master` (không phải `hotfix/import
 | B21 | P3 | Lịch sử SĐT: nhãn "đã đổi" (sky-500) vì che số làm 2 số khác nhau trông giống nhau; chữ tab /fees gãy dòng 390px | BE + FE | Đã đóng (tester API + designer 390px 09/10) |
 
 Trạng thái 09/10: không còn P0/P1. Chờ tester chạy e2e trên bản build cuối.
+
+## Đợt 3 – còn lại (09/10)
+| Hạng mục | Trạng thái |
+|---|---|
+| Quản lý GV /staff (chấm công, ca, trông thay, nghỉ phép) | Code xong (BE 350bd9d, web cf9e612), chờ tester + designer |
+| Thu chi /finance (chi >10tr BGH duyệt) | Code xong, chờ tester + designer |
+| B9 hẹn giờ + ảnh thông báo | Chờ server |
