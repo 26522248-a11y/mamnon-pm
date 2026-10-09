@@ -274,3 +274,7 @@ Còn trước phát hành:
 3. Sáng thứ Hai 12/10: test máy thật (checklist-thu-push-dien-thoai.md) + G8 dặn thuốc.
 4. Trường xác nhận việc lưu ảnh trẻ ở máy chủ ngoài VN (B2 EU).
 5. Dọn dữ liệu test (danh sách ở trên) + chụp lại ảnh hướng dẫn.
+
+## Cập nhật PM (10/10 VN, 03:20)
+- Repair chạy thử: 13/17 tham chiếu mất, toàn bộ dữ liệu QA → KHÔNG chạy --apply riêng, gộp vào đợt dọn dữ liệu test. Backup JSON 53 bảng ở /home/box/secrets/backup-20261010/ (giữ tới khi dọn xong).
+| B33 | P2 | Script repair:missing-photos cắt key còn tên file (ảnh lớp photos/<classId>/… luôn bị coi là mất) + tải cả file để kiểm tra → dùng key đầy đủ + HeadObject | BE (pusher) | Mở, hạn 04:00; bắt buộc trước khi dùng với dữ liệu thật |
