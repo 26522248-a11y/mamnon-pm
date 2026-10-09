@@ -121,7 +121,7 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | G11 | P1 | Nút Vào ca/Ra ca trang đầu chỉ hiện giờ, bấm không ăn | FE + BE | Đóng (tester staging 09/10) |
 | G12 | P2 | Thống nhất chữ "Giao bé" (mục Thêm còn ghi "Đón bé") | FE | Đóng (merge main web 834eec2) |
 | G13 | P2 | Điểm danh hiện 0/danh sách trống khi tải → "Đang tải…" | FE | Đóng (merge main web 834eec2) |
-| G14 | P1 | Điểm danh: bấm 1 lần đổi Có mặt/Vắng, lý do ghi sau (không bật hộp lý do) | FE | Đã push web 0a25df9, chờ tester chạy lại e2e_g14 (Đi muộn/Vắng có phép → Có mặt) |
+| G14 | P1 | Điểm danh: bấm 1 lần đổi Có mặt/Vắng, lý do ghi sau (không bật hộp lý do) | FE | Đóng (tester 25/25, web 0a25df9) |
 
 ## Góp ý Phụ huynh – thử lại (09/10)
 | ID | Mức | Mô tả | Người | Trạng thái |
@@ -136,3 +136,4 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | H8 | P3 | Nhật ký thao tác BGH còn nhãn "Đón bé" (audit-api.ts:35) → "Giao bé" | FE | Mở |
 | G15 | P3 | /home lúc tải hiện "✓ Vào ca" khoá dù đã ra ca → "Đang tải…" | FE (designer) | Mở |
 | H9 | P3 | API /staff/attendance trả pending thay vì sub cho ngày trông thay; Ra ca đồng thời trả alreadyCheckedOut sai | BE | Mở |
+| P14 | P3 | Thông báo PH "có mặt dù đã báo vắng" ghi ngày 2026-10-10 → "Thứ Bảy 10/10" | BE | Mở |
