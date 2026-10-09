@@ -73,7 +73,7 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | ID | Mức | Mô tả | Người | Trạng thái |
 |---|---|---|---|---|
 | G1 | P2 | Điểm danh: lưu xong không có "Đã lưu" | FE | Đã đóng (merge 215e89a) |
-| G2 | P2 | Nhật ký: đang tải hiện "Lớp chưa có bé" → "Đang tải…"; hiện họ tên + ảnh bé | FE | Đã lên staging (web 55a33be, BE d683447), chờ tester |
+| G2 | P2 | Nhật ký: đang tải hiện "Lớp chưa có bé" → "Đang tải…"; hiện họ tên + ảnh bé | FE | Đóng (tester 09/10) |
 | G3 | P3 | Nhật ký: giờ ngủ nhập phút; thêm mục uống nước | BE + FE | Đã đóng (merge e75c480) |
 | G4 | P1 | Giao bé: bỏ tick bắt buộc "đối chiếu ảnh và căn cước" → "Đúng người đón"; thống nhất chữ "Đón bé"/"Giao bé" | FE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
 | G5 | P2 | Chấm công GV: đưa Vào ca/Ra ca ra trang đầu; đổi "Ca sáng" → "Ca ngày" | FE + BE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
@@ -85,8 +85,8 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | ID | Mức | Mô tả | Người | Trạng thái |
 |---|---|---|---|---|
 | H1 | P1 | Bấm thông báo đơn nghỉ chỉ đánh dấu đã đọc → mở thẳng trang duyệt (Duyệt/Từ chối + phân trông thay); gộp vào G7 | FE + BE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
-| H2 | P2 | Nhật ký thao tác hiện chữ kỹ thuật (finance.expense.create, amount, out), tiền thiếu dấu chấm | FE | Đã lên staging (web 55a33be, BE d683447), chờ tester |
-| H3 | P2 | Nhiều trang hiện "0 trẻ"/"Lớp chưa có bé"/"0 tài khoản" khi đang tải → "Đang tải…" (gộp G2) | FE | Đã lên staging (web 55a33be, BE d683447), chờ tester |
+| H2 | P2 | Nhật ký thao tác hiện chữ kỹ thuật (finance.expense.create, amount, out), tiền thiếu dấu chấm | FE | Đóng (tester 09/10) |
+| H3 | P2 | Nhiều trang hiện "0 trẻ"/"Lớp chưa có bé"/"0 tài khoản" khi đang tải → "Đang tải…" (gộp G2) | FE | Còn lỗi /attendance, /dashboard; gộp với G13/H7 nhánh design/h7-loading, chờ test |
 | H4 | P1 | Đã đăng nhập, mở trang chủ vẫn ra trang đăng nhập → chuyển thẳng vào trang theo vai trò | FE | Đã đóng (tester local 2d65984; chờ chạy lại staging) |
 
 ## Góp ý PH lần 2 (10/10 VN)
@@ -103,8 +103,8 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 ## Ảnh lớp & đồng ý (10/10 VN)
 | ID | Mức | Mô tả | Người | Trạng thái |
 |---|---|---|---|---|
-| A1 | P1 | Lúc GV chọn ảnh: hiện danh sách + ảnh bé CHƯA đồng ý; ảnh gắn bé chưa đồng ý bị đánh dấu/làm mờ, chặn đăng nếu chưa xử lý | BE + FE + design | Đã lên staging (web 55a33be, BE d683447), chờ tester |
-| A2 | P1 | PH: câu rõ "Cho cô đăng hình con lên nhóm lớp: Có / Không"; hỏi ngay lần đầu mở app; đổi được ở Tài khoản (ghi lịch sử B18) | FE + BE | Đã lên staging (web 55a33be, BE d683447), chờ tester |
+| A1 | P1 | Lúc GV chọn ảnh: hiện danh sách + ảnh bé CHƯA đồng ý; ảnh gắn bé chưa đồng ý bị đánh dấu/làm mờ, chặn đăng nếu chưa xử lý | BE + FE + design | Đóng (tester 09/10) |
+| A2 | P1 | PH: câu rõ "Cho cô đăng hình con lên nhóm lớp: Có / Không"; hỏi ngay lần đầu mở app; đổi được ở Tài khoản (ghi lịch sử B18) | FE + BE | Đóng (tester 09/10) |
 | G9 | P2 | Ca trong DB vẫn tên "Ca sáng" (hiện trong tin trông thay, trang duyệt) → migration đổi "Ca ngày" | BE | Đã đóng (tester staging) |
 | G10 | P2 | Khung lỗi hiện tiếng Anh ("Failed to fetch", "Internal server error") → câu tiếng Việt, vd "Chưa lưu được, kiểm tra mạng rồi bấm Lưu lại" (msgErrorText, toàn app) | FE | Đã đóng (merge 6284d6e) |
 
@@ -132,3 +132,4 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | P11 | P2 | Tài khoản: "Cài đặt thông báo" trông như nút mà bấm không ăn | FE | Mở |
 | P12 | P2 | Nhắn cô: cảnh báo "Đã quá 08:00…" chỉ hiện sau khi chọn ngày hôm nay | FE | Mở |
 | P13 | P1 | Ô điểm danh trang đầu lúc "Chưa điểm danh" lúc "Bé đã đến lớp" (không nhất quán) | FE + BE | Mở |
+| A3 | P3 | Lịch sử thay đổi: cột "Người sửa" hiện tên đăng nhập thay vì tên hiển thị | BE | Mở |
