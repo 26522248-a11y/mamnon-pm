@@ -157,3 +157,19 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 
 Đã đóng: test HEIC và demo-data P3 (qua khi có mamnon-qa cạnh backend).
 Dọn dữ liệu test thêm: người đón hộ "QA G4 8ff1" của bé An.
+
+## Cập nhật PM (10/10 VN, 02:30)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| H5 | P1 | Nhớ phiên khi đóng mở tab | FE + BE | Đã đóng (tester staging 6/6, 02:24) |
+| H9 | P3 | /staff/attendance trông thay | BE | Đã đóng (tester staging) |
+| P13 | P1 | Dòng ngày trang đầu theo giờ VN | FE | Đã đóng phần ngày (tester staging); test offline ô điểm danh chuyển P3 cho tester |
+| P14 | P3 | Ngày "Thứ Tư 14/10" trong thông báo | BE | Đã đóng (staging đơn nghỉ + test từng loại thông báo) |
+| U5 | P2 | Thẻ giao bé | design | Đã đóng phần giao diện (designer staging 02:20) |
+| U10 | P1 | Thông báo "Đã giao bé" cho PH | BE + FE | Đã đóng phần nội dung (designer staging 02:20) |
+| B27 | P0 | Ảnh giao bé/người đón mất sau mỗi lần deploy (Render xoá uploads), API pickup-photo 404 | BE (pusher điều tra) | Mở, chặn phát hành; hướng R2 (gắn P7) hoặc ổ đĩa cố định Render, chờ anh/chị chốt |
+| D1 | P3 | Thông báo không có ảnh: ẩn khung xám, giữ chữ + nút "Gọi trường" | FE (designer) | Mở |
+| D2 | P3 | Trang đầu PH sau khi bé được đón: ẩn "Bé đã đến lớp"/"Con nghỉ hôm nay" | FE (designer) | Mở |
+| S2 | P2 | Nâng Nest 11 / Express 5 | BE (pusher) | backend PR #4 mở, chờ xác nhận Render Node ≥20 + duyệt |
+
+Dọn dữ liệu test thêm: lượt giao bé An hôm nay cho "QA G4 8ff1".
