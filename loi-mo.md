@@ -87,3 +87,14 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | H2 | P2 | Nhật ký thao tác hiện chữ kỹ thuật (finance.expense.create, amount, out), tiền thiếu dấu chấm | FE | Mở |
 | H3 | P2 | Nhiều trang hiện "0 trẻ"/"Lớp chưa có bé"/"0 tài khoản" khi đang tải → "Đang tải…" (gộp G2) | FE | Mở |
 | H4 | P1 | Đã đăng nhập, mở trang chủ vẫn ra trang đăng nhập → chuyển thẳng vào trang theo vai trò | FE | Mở |
+
+## Góp ý PH lần 2 (10/10 VN)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| P1 | P2 | Trang học phí khi đã đóng đủ vẫn hiện "Còn nợ 0đ · Quá hạn 0đ · Số dư 0đ" → chỉ ghi "Đã đóng đủ"; ẩn dòng 0đ | FE | Mở |
+| P2 | P2 | Còn chữ "căn cước", lỗi chính tả "Cabin cước chưa có", "BMI" ở trang PH | FE | Mở |
+| P3 | P2 | Bảng "Bạn đã chặn thông báo…" nằm mãi trên trang đầu → nói dễ hiểu + nút ẩn | FE | Mở |
+| P4 | P3 | Báo nghỉ khi bé đã có mặt: "Hôm nay bé đã đi học rồi" | FE | Mở |
+| P5 | P3 | "ĐÃ QUA"/"không được hoàn tiền ăn" → "Báo trước 8 giờ sáng thì trường trả lại tiền ăn" | FE | Mở |
+| P6 | P3 | Trên máy tính PH vẫn có menu bên 10 mục → dùng cùng 5 mục như điện thoại | FE | Mở |
+| P7 | — | Ảnh lớp là ảnh mẫu: chờ R2 + trường đăng ảnh thật | — | Chờ R2 |
