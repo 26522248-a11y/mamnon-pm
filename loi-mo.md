@@ -107,3 +107,10 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | A2 | P1 | PH: câu rõ "Cho cô đăng hình con lên nhóm lớp: Có / Không"; hỏi ngay lần đầu mở app; đổi được ở Tài khoản (ghi lịch sử B18) | FE + BE | Đã lên staging (web 55a33be, BE d683447), chờ tester |
 | G9 | P2 | Ca trong DB vẫn tên "Ca sáng" (hiện trong tin trông thay, trang duyệt) → migration đổi "Ca ngày" | BE | Đã đóng (tester staging) |
 | G10 | P2 | Khung lỗi hiện tiếng Anh ("Failed to fetch", "Internal server error") → câu tiếng Việt, vd "Chưa lưu được, kiểm tra mạng rồi bấm Lưu lại" (msgErrorText, toàn app) | FE | Đã đóng (merge 6284d6e) |
+
+## Góp ý Hiệu trưởng – thử lại luồng nghỉ phép (09/10)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| H5 | P1 | Đóng tab mở lại vẫn bị đòi đăng nhập (phải nhớ phiên) | FE + BE | Mở |
+| H6 | P1 | Chấm công tuần 12/10: không hiện cô Mai trông thay; "Cần trông thay"/"Nghỉ phép" = 0. Cần ghi "Trông thay Mầm 1" trên dòng cô Mai + cộng đúng ngày nghỉ | BE + FE | Mở |
+| H7 | P2 | Tổng quan hiện "Số lớp 0" trước khi tải xong → "Đang tải…" | FE | Mở |
