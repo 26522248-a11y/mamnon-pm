@@ -278,3 +278,11 @@ Còn trước phát hành:
 ## Cập nhật PM (10/10 VN, 03:20)
 - Repair chạy thử: 13/17 tham chiếu mất, toàn bộ dữ liệu QA → KHÔNG chạy --apply riêng, gộp vào đợt dọn dữ liệu test. Backup JSON 53 bảng ở /home/box/secrets/backup-20261010/ (giữ tới khi dọn xong).
 | B33 | P2 | Script repair:missing-photos cắt key còn tên file (ảnh lớp photos/<classId>/… luôn bị coi là mất) + tải cả file để kiểm tra → dùng key đầy đủ + HeadObject | BE (pusher) | Mở, hạn 04:00; bắt buộc trước khi dùng với dữ liệu thật |
+
+## Cập nhật PM (10/10 VN, 03:32)
+- PR #10 render.yaml sang s3: Đã merge 7e06b5e.
+- B33: Đạt chạy thử cuối trên 9d55dbe (total 19, missingPrimary 13, 22 HeadObject, 0 GetObject; QA B33 còn, QA S1 mất). backend PR #11 chờ anh/chị duyệt.
+- Tài khoản cô Mai (demo_gv_mai) đã đặt lại, SM trong file tài khoản. Là tài khoản demo → dọn dữ liệu/demo:purge CHỈ sau buổi G8.
+
+Lịch thứ Hai 12/10: 07:30 pusher điểm danh → tester G8 (đăng nhập cô Mai) → test máy thật (mamnon-qa/checklist-thu-push-dien-thoai.md) → fullstack dev chạy thử dọn dữ liệu, anh/chị duyệt → dọn thật → designer chụp lại ảnh hướng dẫn.
+Việc anh/chị: hỏi trường về lưu ảnh trẻ ở máy chủ ngoài VN (B2 EU) trước khi dùng thật.
