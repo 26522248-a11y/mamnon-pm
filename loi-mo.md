@@ -185,3 +185,9 @@ Dọn dữ liệu test thêm: lượt giao bé An hôm nay cho "QA G4 8ff1".
 | S2 | P2 | Nest 11 / Express 5 | BE (pusher) | backend PR #4 (0598d54), Render NODE_VERSION=20, chờ anh/chị duyệt |
 
 Dọn dữ liệu test thêm: lượt giao bé Lê Hoàng Long 02:29 kèm ảnh; bài ảnh lớp "QA S1 – ảnh test, sẽ xoá".
+
+## Cập nhật PM (10/10 VN, 02:42)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| B27 | P0 | Chuyển mọi upload sang R2 (STORAGE_DRIVER=s3) | BE (pusher code, dev deploy) | Code xong backend PR #5 (544b439), 209/210 test; chờ R2 credential (nhập cho fullstack dev) + duyệt; sau deploy tester thử deploy lại xem ảnh còn; pg_dump → repair:missing-photos chạy thử → anh/chị duyệt --apply |
+| B29 | P3 | Tên file chứng từ thu chi tiếng Việt lỗi font khi tải | BE (pusher) | Mở, làm sau B27 |
