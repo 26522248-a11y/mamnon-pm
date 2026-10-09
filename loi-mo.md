@@ -191,3 +191,14 @@ Dọn dữ liệu test thêm: lượt giao bé Lê Hoàng Long 02:29 kèm ảnh;
 |---|---|---|---|---|
 | B27 | P0 | Chuyển mọi upload sang R2 (STORAGE_DRIVER=s3) | BE (pusher code, dev deploy) | Code xong backend PR #5 (544b439), 209/210 test; chờ R2 credential (nhập cho fullstack dev) + duyệt; sau deploy tester thử deploy lại xem ảnh còn; pg_dump → repair:missing-photos chạy thử → anh/chị duyệt --apply |
 | B29 | P3 | Tên file chứng từ thu chi tiếng Việt lỗi font khi tải | BE (pusher) | Mở, làm sau B27 |
+
+## Cập nhật PM (10/10 VN, 02:47)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| S2 | P2 | Nest 11 / Express 5 | BE | Merge master 18acb06, staging 02:44; chờ tester kiểm tra API |
+| D1, D2, B28 | P3 | Ảnh trống, ẩn nút sau khi đón, 401 /pickups | FE | Merge web 54d5348, staging 02:44; chờ tester |
+| D3 | P3 | Dòng "Đã được … đón" bấm được → lịch sử điểm danh | FE (designer) | design/d3-pickup-link 1c377c0, dev đang gộp |
+| B27 | P0 | Lưu ảnh bền vững | BE | Code đã merge (ef4209c) nhưng staging vẫn STORAGE_DRIVER=local → ảnh vẫn mất khi deploy. Anh/chị hoãn R2 (Cloudflare đòi thẻ). pusher tìm dịch vụ S3 free không cần thẻ, báo 03:30. Chưa chạy repair. Vẫn chặn phát hành |
+| B29 | P3 | Tên file chứng từ tiếng Việt | BE (pusher) | Xong pusher/b29 a552638, chờ PR; chứng từ cũ: đếm trước, nếu chỉ dữ liệu test thì dọn |
+| B30 | P3 | Test demo-data lỗi thất thường (sót dữ liệu giữa các lần chạy) | BE (pusher) | Mở, sau S3 |
+| S3 | P2 | sharp, uuid, js-yaml | BE (pusher) | Đang làm |
