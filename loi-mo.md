@@ -98,3 +98,9 @@ Trạng thái 09/10 22:40 VN: không còn lỗi mở. Chờ deploy staging (Rend
 | P5 | P3 | "ĐÃ QUA"/"không được hoàn tiền ăn" → "Báo trước 8 giờ sáng thì trường trả lại tiền ăn" | FE | Mở |
 | P6 | P3 | Trên máy tính PH vẫn có menu bên 10 mục → dùng cùng 5 mục như điện thoại | FE | Mở |
 | P7 | — | Ảnh lớp là ảnh mẫu: chờ R2 + trường đăng ảnh thật | — | Chờ R2 |
+
+## Ảnh lớp & đồng ý (10/10 VN)
+| ID | Mức | Mô tả | Người | Trạng thái |
+|---|---|---|---|---|
+| A1 | P1 | Lúc GV chọn ảnh: hiện danh sách + ảnh bé CHƯA đồng ý; ảnh gắn bé chưa đồng ý bị đánh dấu/làm mờ, chặn đăng nếu chưa xử lý | BE + FE + design | Mở |
+| A2 | P1 | PH: câu rõ "Cho cô đăng hình con lên nhóm lớp: Có / Không"; hỏi ngay lần đầu mở app; đổi được ở Tài khoản (ghi lịch sử B18) | FE + BE | Mở |
