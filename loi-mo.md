@@ -288,3 +288,14 @@ Lịch thứ Hai 12/10: 07:30 pusher điểm danh → tester G8 (đăng nhập c
 Việc anh/chị: hỏi trường về lưu ảnh trẻ ở máy chủ ngoài VN (B2 EU) trước khi dùng thật.
 
 - B33: Đã đóng (backend 29b12d3, 03:32). Không còn việc mở đêm 10/10.
+
+## Sáng thứ Hai 12/10 (07:45 VN)
+Lịch: 07:44 G8 (tester) → 08:00–09:15 designer chụp 18 ảnh hướng dẫn trên dữ liệu mẫu (tránh "QA" + bé An) → 09:30 bản chạy thử dọn cuối (fullstack dev) → anh/chị duyệt → dọn thật.
+Chờ anh/chị duyệt: đặt lại MK demo_ph_phuc (SPP); 5 câu hỏi dọn dữ liệu (PM đề xuất: giữ Ca ngày; xoá 2 khoản "Thử nghiệm" 12tr/15tr nếu là dữ liệu test; xoá "SMOKE hẹn giờ"; giữ 19 dòng audit; xoá 8 file QA mồ côi B2).
+Lưu ý: lớp Chồi 1 sẽ không còn GV sau purge; purge không transaction → chạy khi không ai test, kiểm tra backup trước.
+
+Trước khi giao trường (bảo mật):
+1. Anh/chị đổi MK 4 tài khoản thật (hieutruong, gv_mam1, ketoan, ph_an), tự giữ.
+2. Tạo lại Render API key + B2 applicationKey (key B2 từng dán vào chat), nhập key mới cho fullstack dev qua ô bảo mật → deploy lại → tester kiểm tra nhanh ảnh + phiếu thu.
+3. Xoá trên máy chung: file tài khoản staging, backup-20261010, /workspace/pwreset (fullstack dev); guide-shots/out, DB mamnon_b30, worktree cũ (designer); /workspace/stg/s1 (tester).
+4. Trường xác nhận lưu ảnh trẻ trên B2 EU.
