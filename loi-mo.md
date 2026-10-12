@@ -299,3 +299,5 @@ Trước khi giao trường (bảo mật):
 2. Tạo lại Render API key + B2 applicationKey (key B2 từng dán vào chat), nhập key mới cho fullstack dev qua ô bảo mật → deploy lại → tester kiểm tra nhanh ảnh + phiếu thu.
 3. Xoá trên máy chung: file tài khoản staging, backup-20261010, /workspace/pwreset (fullstack dev); guide-shots/out, DB mamnon_b30, worktree cũ (designer); /workspace/stg/s1 (tester).
 4. Trường xác nhận lưu ảnh trẻ trên B2 EU.
+
+- G8: Đã đóng (tester staging 12/10 07:55, 5/5 PASS: cô trông thay thấy dặn thuốc, Đã cho uống ghi giờ + báo PH, cô ngoài lớp bị 403, bấm lần 2 → 409). Dữ liệu G8 (substitution d902d19c, medicine QA) thêm vào danh sách dọn.
